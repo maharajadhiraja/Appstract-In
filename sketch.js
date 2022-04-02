@@ -29,9 +29,9 @@ function preload()
   
 
   //To load banana and obstacle
-  banana_img = loadImage("kill.png.png");
+  banana_img = loadImage("kill.png(1).png");
   obstacle_img = loadImage("obstacle.png");
-  ground_img=loadImage("ground2.png");
+  ground_img=loadImage("ground.png");
   orange_img=loadImage("orange.png");
   gameOver_img=loadImage("Screenshot (687).png");
   restart_img=loadImage("restart.png");
