@@ -57,7 +57,7 @@ function setup() {
   monkey.scale=0.500;
   //monkey.debug=true;
   //To make monkey look like it is on the ground not outside it
-  monkey.setCollider('circle',0,0,350);
+  monkey.setCollider('circle',0,0,180);
   
   //To create ground sprite
   ground=createSprite(width/2,height-42,1200,8);
