@@ -276,7 +276,7 @@ function obstacles()
   if(frameCount%170===0)
   {
   //To create obstacle sprite
-  obstacle=createSprite(width,height-70,10,10);
+  obstacle=createSprite(width,height-120,10,10);
   //To add image to banana
   obstacle.addImage(obstacle_img);
   //Scaling to adjust banana
