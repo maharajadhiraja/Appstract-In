@@ -109,8 +109,8 @@ function draw()
    fill("black");
    text("2.Press Space Key for jump",50,135);
    text("4.Try to collect max food stuff for more most time",50,190);
-   text("5.Stay away from theives to save Foodstuff",50,220);
-   text("6.Collect bananas to score and get survival time",50,250);
+   text("5.Donate foodstuff to needy",50,220);
+   text("6.Collect orange to score and get survival time",50,250);
    text("7.Avoid the obstacles otherwise you will lose 1 chance from 3",50,280);
    text("8.Try to Score high, With more score game will get more difficult",50,310);
    text("9.Avoid Long Jump unnecessary as it decrease survival time",50,340);
