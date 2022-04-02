@@ -29,7 +29,7 @@ function preload()
   
 
   //To load banana and obstacle
-  banana_img = loadImage("banana.png");
+  banana_img = loadImage("kill.png.png");
   obstacle_img = loadImage("obstacle.png");
   ground_img=loadImage("ground2.png");
   orange_img=loadImage("orange.png");
@@ -178,7 +178,6 @@ function draw()
     if(monkey.isTouching(foodGroup))
     {
       foodGroup.destroyEach();
-      score=score-1;
       survivalTime=survivalTime+5;
       donate=donate+1;
     }
@@ -266,7 +265,7 @@ function draw()
   text("Food stuff collected: "+score,20,35);
   text("Survival Time: "+survivalTime,450,35);
   text("Chances: "+chances,250,35);
-  text("Donation: "+donate,550,35);
+  text("Donation: "+donate,650,35);
   
 }
 
@@ -297,7 +296,7 @@ function food()
   if(frameCount%250===0)
   {
     //To create banana sprite
-    banana=createSprite(600,Math.round(random(120,270)),10,10);
+    banana=createSprite(450,height-75,10,10);
     //To add image to banana
     banana.addImage(banana_img);
     //To assign velocity to banana
