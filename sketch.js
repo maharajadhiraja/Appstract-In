@@ -33,7 +33,7 @@ function preload()
   obstacle_img = loadImage("obstacle.png");
   ground_img=loadImage("ground2.png");
   orange_img=loadImage("orange.png");
-  gameOver_img=loadImage("gameover.png");
+  gameOver_img=loadImage("Screenshot (687).png");
   restart_img=loadImage("restart.png");
 
   //To load sounds  
