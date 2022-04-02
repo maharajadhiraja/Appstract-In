@@ -276,7 +276,7 @@ function obstacles()
   if(frameCount%170===0)
   {
   //To create obstacle sprite
-  obstacle=createSprite(width,height-200,10,10);
+  obstacle=createSprite(width,height-160,10,10);
   //To add image to banana
   obstacle.addImage(obstacle_img);
   //Scaling to adjust banana
@@ -296,7 +296,7 @@ function food()
   if(frameCount%250===0)
   {
     //To create banana sprite
-    banana=createSprite(450,height-200,10,10);
+    banana=createSprite(450,height-160,10,10);
     //To add image to banana
     banana.addImage(banana_img);
     //To assign velocity to banana
