@@ -56,10 +56,10 @@ function setup() {
   monkey.scale=0.7;
   //monkey.debug=true;
   //To make monkey look like it is on the ground not outside it
-  monkey.setCollider("rectangle",0,0,350,150);
+  monkey.setCollider("rectangle",0,0,550,400);
   
   //To create ground sprite
-  ground=createSprite(width/2,height-42,1200,8);
+  ground=createSprite(width/2,height-74,800,8);
   ground.addImage(ground_img);
   
   //To declare new Groups
