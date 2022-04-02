@@ -6,7 +6,7 @@ var orange, orange_img;
 //Group variables
 var foodGroup,obsGroup,orangeGroup;
 //Score & losing system
-var survivalTime,score,chances;
+var survivalTime,score,chances,donate;
 var ground,ground_img;
 var gameOver,gameOver_img;
 var restart,restart_img;
@@ -74,6 +74,7 @@ function setup() {
   score=0;
   //Initial value of chances
   chances=3;
+  donate=0;
   
   //To create gameOver sprite
   gameOver=createSprite(width/2,height-250,10,10)
@@ -177,8 +178,9 @@ function draw()
     if(monkey.isTouching(foodGroup))
     {
       foodGroup.destroyEach();
-      score=score+1;
+      score=score-1;
       survivalTime=survivalTime+5;
+      donate=donate+1;
     }
     
     //To add bonus to score when monkey touches oranges
@@ -264,7 +266,7 @@ function draw()
   text("Food stuff collected: "+score,20,35);
   text("Survival Time: "+survivalTime,450,35);
   text("Chances: "+chances,250,35);
-  
+  text("Donation: "+donate,550,35);
   
 }
 
@@ -292,7 +294,7 @@ function obstacles()
 function food()
 {
   //To make banana appear at interval of 150 frames
-  if(frameCount%150===0)
+  if(frameCount%250===0)
   {
     //To create banana sprite
     banana=createSprite(600,Math.round(random(120,270)),10,10);
@@ -313,7 +315,7 @@ function food()
 function bonusFood()
 {
   //To make orange appear at interval of 250 frames
-  if(frameCount%250===0)
+  if(frameCount%150===0)
   {
   //To create orange sprite
   orange=createSprite(width,Math.round(random(height-360,height-250)),10,10);
@@ -337,6 +339,7 @@ function reset()
   score=0;
   chances=3;
   survivalTime=10;
+  donate=0;
   gameOver.visible=false;
   restart.visible=false;
 }
