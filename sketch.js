@@ -51,15 +51,16 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   
   //To create monkey sprite
-  monkey=createSprite(60,height-25,10,10);  
+  monkey=createSprite(60,height-75,10,10);  
   monkey.addAnimation("run",monkey_run);
-  monkey.scale=0.7;
+  //Scaling to adjust the animation
+  monkey.scale=0.110;
   //monkey.debug=true;
   //To make monkey look like it is on the ground not outside it
-  monkey.setCollider("rectangle",0,0,550,400);
+  monkey.setCollider("rectangle",0,0,550,340);
   
   //To create ground sprite
-  ground=createSprite(width/2,height-74,800,8);
+  ground=createSprite(width/2,height-42,1200,8);
   ground.addImage(ground_img);
   
   //To declare new Groups
