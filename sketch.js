@@ -25,7 +25,7 @@ var gameOverSound;
 function preload()
 {
   //To load monkey animation
-  monkey_run =   loadAnimation("sprite_0.png","sprite_1.png","sprite_2.png","sprite_3.png","sprite_4.png","sprite_5.png","sprite_6.png","sprite_7.png","sprite_8.png");
+  monkey_run =   loadAnimation("guy1.png","guy2.png","guy3.png","guy4.png");
   
 
   //To load banana and obstacle
