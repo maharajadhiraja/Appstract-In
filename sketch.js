@@ -29,7 +29,7 @@ function preload()
   
 
   //To load banana and obstacle
-  banana_img = loadImage("kill.png(1).png");
+  banana_img = loadImage("magicut_1648964554066.png");
   obstacle_img = loadImage("obstacle.png");
   ground_img=loadImage("ground.png");
   orange_img=loadImage("orange.png");
