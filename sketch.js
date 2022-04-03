@@ -108,7 +108,7 @@ function draw()
    text("1.Press space to Start the Game",50,110);
    fill("black");
    text("2.Press Space Key for jump",50,135);
-   text("4.Try to collect max food stuff for more most time",50,190);
+   text("4.Try to collect max food stuff for donation",50,190);
    text("5.Donate foodstuff to needy",50,220);
    text("6.Collect orange to score and get survival time",50,250);
    text("7.Avoid the obstacles otherwise you will lose 1 chance from 3",50,280);
