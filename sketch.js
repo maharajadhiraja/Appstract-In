@@ -302,7 +302,7 @@ function food()
     //To assign velocity to banana
     banana.velocityX=-(3.5+score/10);
     //Scaling to adjust image
-    banana.scale=0.1;
+    banana.scale=0.5;
     //To assign lifetime to banana
     banana.lifetime=width/banana.velocity;
     //Add banana to foodgroup
